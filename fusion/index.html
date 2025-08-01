@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid with 24 Alternating Rows</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 10px;
+        }
+
+        .grid-row {
+            display: contents;
+        }
+
+        .left-col {
+            padding: 10px;
+            background-color: #D3D3D3;
+        }
+        
+        .right-col {
+            padding: 10px;
+            background-color: #A2B2A2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        
+        /* Stile per le righe "alte" */
+        .high-row .left-col, .high-row .right-col {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .high-row textarea {
+            height: 100px;
+        }
+
+        /* Stile per le righe "basse" */
+        .low-row .left-col, .low-row .right-col {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .low-row textarea {
+            height: 50px;
+        }
+        
+        textarea {
+            width: 100%;
+            resize: vertical;
+        }
+        
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Grid with Text Copy</h2>
+
+    <div class="grid-container">
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea1"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea1')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea2"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea2')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea3"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea3')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea4"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea4')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea5"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea5')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea6"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea6')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea7"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea7')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea8"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea8')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea9"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea9')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea10"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea10')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea11"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea11')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea12"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea12')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea13"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea13')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea14"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea14')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea15"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea15')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea16"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea16')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea17"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea17')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea18"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea18')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea19"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea19')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea20"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea20')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea21"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea21')">Copy</button>
+            </div>
+        </div>
+        
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea22"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea22')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row high-row">
+            <div class="left-col">
+                <textarea id="myTextarea23"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea23')">Copy</button>
+            </div>
+        </div>
+
+        <div class="grid-row low-row">
+            <div class="left-col">
+                <textarea id="myTextarea24"></textarea>
+            </div>
+            <div class="right-col">
+                <button onclick="copyContent('myTextarea24')">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyContent(textareaId) {
+            const textarea = document.getElementById(textareaId);
+            textarea.select();
+            textarea.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(textarea.value).then(() => {
+                alert("Content copied!");
+            }).catch(err => {
+                console.error('Error in copying:', err);
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const textareas = document.querySelectorAll('textarea');
+                    data.texts.forEach((text, index) => {
+                        if (textareas[index]) {
+                            textareas[index].value = text;
+                        }
+                    });
+                })
+                .catch(error => console.error('Error loading data:', error));
+        });
+    </script>
+
+</body>
+</html>
